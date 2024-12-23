@@ -1,0 +1,198 @@
+/*body styling*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    transform: scale(0.92);
+   
+  }
+  /*navigation bar styling*/
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    color: black;
+  }
+  /*left navigation styling*/
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  /*logo styling*/
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  /*site name styling*/
+  .site-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  /*navigation center styling*/
+  .nav-center {
+    display: flex;
+    gap: 40px;
+  }
+   /*overlay image styling*/
+  .overlay-image{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin-right: 250px;
+    height: auto;
+    width: 250px;
+    
+  
+}
+
+  /*link styling*/
+  .link {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    
+  }
+  /*link hover styling*/
+  .link:hover{
+    
+    color: orange;
+
+
+  }
+
+  
+  /*link active styling*/
+  .link.active {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    text-decoration: underline;
+  }
+  /*image container styling*/
+  .image-container{
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+  /*navigation right button styling*/
+  .nav-right .btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    width:100px;
+    height: 35px;
+    border-radius: 2px;
+  }
+  /*navigation right button hover styling*/
+  .nav-right .btn:hover{
+    background-color: orange;
+  }
+  /*left button hover styling*/
+  .left .btn:hover{
+    background-color: orange;
+  }
+  /*right image link  hover styling*/
+  .right .image-link:hover{
+    background-color: orange;
+  }
+
+
+  /* Main Content */
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
+  }
+  /*project numbers styling*/
+  .project-numbers{
+    display: flex;
+    gap: 45px;
+    font-size: 50px;
+    margin-top: 50px;
+  }
+  /*project icons styling*/
+  .project-icons{
+    bottom: 20px;
+    display: flex;
+    gap: 52px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    
+  }
+  /*left styling*/
+  .left {
+    flex: 1;
+  }
+  /*title styling*/
+  .title {
+    color: black;
+    font-size: 100px;
+    margin-bottom: 20px;
+    
+  }
+  /*text styling*/
+  .text {
+    margin-bottom: 15px;
+    color: #333;
+
+  }
+  /*left button styling*/
+  .left .btn {
+    background-color: rgb(35, 34, 34);
+    color: white;
+    width: 150px;
+    height: 45px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  /*right styling*/
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  /*image styling*/
+  .image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .main {
+      flex-direction: column;
+    }
+  
+    .navbar {
+      flex-wrap: wrap;
+      text-align: center;
+    }
+  
+    .nav-center {
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .nav-right .btn {
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .image {
+      width: 90%;
+    }
+  }
+  

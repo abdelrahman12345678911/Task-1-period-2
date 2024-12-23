@@ -1,0 +1,105 @@
+/*body styling*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+/*container styling*/
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+/*image container styling*/
+.image-container{
+    height: 40px;
+    width: 40px;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*header text styling*/
+.header-text {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: left;
+    margin-top : 80px;
+
+}
+
+/* Grid Layout */
+.grid {
+    display: flex;
+    gap: 20px;
+}
+
+/* Column Styling */
+.column {
+    flex: 1;
+}
+
+/* Images in First Column */
+.column img {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*  Image in Third Column */
+.big-image {
+    
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    
+    
+    
+}
+/*button styling*/
+.btn{
+    background-color: rgb(35, 34, 34);
+    color: white;
+    width: 150px;
+    height: 45px;
+    border: none;
+    gap: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 110px;
+    margin-left: 250px;
+}
+/*button hover styling*/
+.btn:hover{
+    background-color: orange;
+    color: aliceblue;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid {
+        flex-direction: column;
+    }
+
+    .header-text {
+        font-size: 1.2rem;
+    }
+
+    .column img {
+        max-width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    .column{
+        flex: 1 1 100%;
+    }
+}
